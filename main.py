@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
 from database import create_db
-from routers.products import router as product_router
-from routers.suppliers import router as supplier_router
+from products import router as product_router
+from suppliers import router as supplier_router
 
 app = FastAPI(
     title="TechVault Product API",
